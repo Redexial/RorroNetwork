@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+
     <title>RorroNetwork</title>
 </head>
 <body>
-    <header>
+    <header class="main_header">
         <div>
             <figure>
-                <img src="" alt="Logo Rorrosaurio">
+                <img src="images/RorroNetwork_Horizontal.png" alt="Logo Rorrosaurio">
             </figure>
         </div>
-        <div>
+        <div class="navigation">
             <nav>
                 <ul>
                     <li><a href="#">Inicio</a></li>
@@ -47,7 +51,7 @@
                         <li>
                             <div>
                                 <figure>
-                                    <img src="" alt="Rorro">
+                                    <img src="images/rorro.jpeg" alt="Rorro">
                                 </figure>
                             </div>
                             <div><h3>Rorro</h3></div>
@@ -56,7 +60,7 @@
                         <li>
                             <div>
                                 <figure>
-                                    <img src="" alt="Fedic">
+                                    <img src="images/fedi.jpeg" alt="Fedic">
                                 </figure>
                             </div>
                             <div><h3>Fedic</h3></div>
@@ -65,7 +69,7 @@
                         <li>
                             <div>
                                 <figure>
-                                    <img src="" alt="Deniel">
+                                    <img src="images/deniel.jpeg" alt="Deniel">
                                 </figure>
                             </div>
                             <div><h3>Deniel</h3></div>
@@ -74,7 +78,7 @@
                         <li>
                             <div>
                                 <figure>
-                                    <img src="" alt="Puldop">
+                                    <img src="images/puldo.jpeg" alt="Puldop">
                                 </figure>
                             </div>
                             <div><h3>Puldop</h3></div>
@@ -87,6 +91,73 @@
         <section>
             <div>
                 <div><h2>Servicios</h2></div>
+                <div>
+                    <article class="service">
+                        <header>
+                            <div class="service_title">
+                                <h3>Rorro-Radio</h3>
+                            </div>
+                            <div class="service_date">
+                                <h4>Inaugurado el</h4>
+                            </div>
+                            <div class="service_link">
+                                <h5>Puedes escucharla en:</h5>
+                            </div>
+                        </header>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aperiam veritatis repellendus vel, ea qui neque aspernatur nihil, placeat similique accusamus fugit perferendis quod quas. Consequatur officiis iste odio ut!</p>
+                        <figure>
+                            <img src="images/Rorro-Radio.png" alt="Rorro-Radio">
+                        </figure>
+                    </article>
+                </div>
+                <div>
+                    <article class="service">
+                        <div class="service_text_content">
+                            <header>
+                                <div class="service_title">
+                                    <h3>Fedic Streaming</h3>
+                                </div>
+                                <div class="service_date">
+                                    <h4>Inaugurado el</h4>
+                                </div>
+                                <div class="service_link">
+                                    <h5>Puedes verlo en:</h5>
+                                </div>
+                            </header>
+                                <div class="service_description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aperiam veritatis repellendus vel, ea qui neque aspernatur nihil, placeat similique accusamus fugit perferendis quod quas. Consequatur officiis iste odio ut!</p>
+                                </div>
+                        </div>
+                            <div class="service_image">
+                                <figure>
+                                    <img src="images/Dr.Fedic.png" alt="Fedic-streaming">
+                                </figure>
+                            </div>
+                    </article>
+                </div>
+                <div>
+                    <article class="service">
+                        <header>
+                            <div class="service_title">
+                                <h3>Dilap Tutoriales</h3>
+                            </div>
+                            <div class="service_date">
+                                <h4>Inaugurado el</h4>
+                            </div>
+                            <div class="service_link">
+                                <h5>Puedes verlo en:</h5>
+                            </div>
+                        </header>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aperiam veritatis repellendus vel, ea qui neque aspernatur nihil, placeat similique accusamus fugit perferendis quod quas. Consequatur officiis iste odio ut!</p>
+                            </div>
+                            <div>
+                                <figure>
+                                    <img src="images/Aprende con dilap.png" alt="Dila_tutorials">
+                                </figure>
+                            </div>
+                    </article>
+                </div>
             </div>
         </section>
         <section>
@@ -107,7 +178,7 @@
                             <textarea name="mensaje" id="message" cols="30" rows="10" placeholder="Mensaje:" required></textarea>
                         </div>
                         <div>
-                            <input type="submit" name="enviar" id="send" value="Enviar" required>
+                            <input type="submit" name="enviar" id="send" value="Enviar">
                         </div>
                     </form>
                 </div>

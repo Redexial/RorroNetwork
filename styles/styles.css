@@ -1,0 +1,24 @@
+body{
+    font-family: 'RocknRoll One', sans-serif;
+    background-color: #063946;
+}   
+footer{
+    background-color: #011627;
+}
+.main_header{
+    background-color: #011627;
+    color: #008a77;
+}
+.main_header a{
+    color: #008a77;
+    text-decoration: none;
+}
+.service{
+    background-color: #062636;
+}
+.service_text_content{
+    width: 50%;
+}
+.service_image{
+    width: 50%;
+}
