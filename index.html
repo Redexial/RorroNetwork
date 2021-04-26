@@ -12,7 +12,7 @@
 </head>
 <body>
     <header class="main_header">
-        <div>
+        <div class="header_figure">
             <figure>
                 <img src="images/RorroNetwork_Horizontal.png" alt="Logo Rorrosaurio">
             </figure>
@@ -30,7 +30,7 @@
         </div>
     </header>
     <main>
-        <section>
+        <section class="hero">
             <div>
                 <div><h1>!Bienvenido a la <strong>RorroNetwork!</strong>
                 </h1></div>
@@ -46,12 +46,12 @@
         <section>
             <div>
                 <div><h2>Integrantes</h2></div>
-                <div>
+                <div class="members">
                     <ul>
                         <li>
                             <div>
                                 <figure>
-                                    <img src="images/rorro.jpeg" alt="Rorro">
+                                    <img src="images/rorro.jpeg" alt="Rorro" width="300px">
                                 </figure>
                             </div>
                             <div><h3>Rorro</h3></div>
@@ -60,7 +60,7 @@
                         <li>
                             <div>
                                 <figure>
-                                    <img src="images/fedi.jpeg" alt="Fedic">
+                                    <img src="images/fedi.jpeg" alt="Fedic" width="300px">
                                 </figure>
                             </div>
                             <div><h3>Fedic</h3></div>
@@ -69,7 +69,7 @@
                         <li>
                             <div>
                                 <figure>
-                                    <img src="images/deniel.jpeg" alt="Deniel">
+                                    <img src="images/deniel.jpeg" alt="Deniel" width="300px">
                                 </figure>
                             </div>
                             <div><h3>Deniel</h3></div>
@@ -78,7 +78,7 @@
                         <li>
                             <div>
                                 <figure>
-                                    <img src="images/puldo.jpeg" alt="Puldop">
+                                    <img src="images/puldo.jpeg" alt="Puldop" width="300px">
                                 </figure>
                             </div>
                             <div><h3>Puldop</h3></div>
@@ -93,21 +93,25 @@
                 <div><h2>Servicios</h2></div>
                 <div>
                     <article class="service">
-                        <header>
-                            <div class="service_title">
-                                <h3>Rorro-Radio</h3>
-                            </div>
-                            <div class="service_date">
-                                <h4>Inaugurado el</h4>
-                            </div>
-                            <div class="service_link">
-                                <h5>Puedes escucharla en:</h5>
-                            </div>
-                        </header>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aperiam veritatis repellendus vel, ea qui neque aspernatur nihil, placeat similique accusamus fugit perferendis quod quas. Consequatur officiis iste odio ut!</p>
-                        <figure>
-                            <img src="images/Rorro-Radio.png" alt="Rorro-Radio">
-                        </figure>
+                        <div class="service_text_content">
+                            <header>
+                                <div class="service_title">
+                                    <h3>Rorro-Radio</h3>
+                                </div>
+                                <div class="service_date">
+                                    <h4>Inaugurado el</h4>
+                                </div>
+                                <div class="service_link">
+                                    <h5>Puedes escucharla en:</h5>
+                                </div>
+                            </header>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aperiam veritatis repellendus vel, ea qui neque aspernatur nihil, placeat similique accusamus fugit perferendis quod quas. Consequatur officiis iste odio ut!</p>
+                        </div>
+                        <div class="service_image">
+                            <figure>
+                                <img src="images/Rorro-Radio.png" alt="Rorro-Radio" width="400px">
+                            </figure>
+                        </div>
                     </article>
                 </div>
                 <div>
@@ -128,15 +132,16 @@
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aperiam veritatis repellendus vel, ea qui neque aspernatur nihil, placeat similique accusamus fugit perferendis quod quas. Consequatur officiis iste odio ut!</p>
                                 </div>
                         </div>
-                            <div class="service_image">
-                                <figure>
-                                    <img src="images/Dr.Fedic.png" alt="Fedic-streaming">
-                                </figure>
-                            </div>
+                        <div class="service_image">
+                            <figure>
+                                <img src="images/Dr.Fedic.png" alt="Fedic-streaming" width="400px">
+                            </figure>
+                        </div>
                     </article>
                 </div>
                 <div>
                     <article class="service">
+                        <div class="service_text_content">
                         <header>
                             <div class="service_title">
                                 <h3>Dilap Tutoriales</h3>
@@ -151,11 +156,12 @@
                             <div>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aperiam veritatis repellendus vel, ea qui neque aspernatur nihil, placeat similique accusamus fugit perferendis quod quas. Consequatur officiis iste odio ut!</p>
                             </div>
-                            <div>
-                                <figure>
-                                    <img src="images/Aprende con dilap.png" alt="Dila_tutorials">
-                                </figure>
-                            </div>
+                        </div>
+                        <div class="service_image">
+                            <figure>
+                                <img src="images/Aprende con dilap.png" alt="Dila_tutorials" width="400px">
+                            </figure>
+                        </div>
                     </article>
                 </div>
             </div>
@@ -185,7 +191,12 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="main_footer">
+        <div>
+            <p>
+                Creado por <a href="https://github.com/DALO-eng" target="_blank">DALO-eng</a>
+            </p>
+        </div>
         <div>
             <nav>
                 <ul>
