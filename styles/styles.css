@@ -48,18 +48,48 @@ figure{
 .hero h1{
     text-align: center;
 }
+.title_section{
+    text-align: center;
+}
 .members ul{
     display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    border: 1% solid black;
+}
+.members li{
+    background-color: #4f16a5;
+    width: 300px;
+    margin: 1%;
+    padding: 2%;
+    flex-shrink: 0;
+}
+.members_img{
+    border-radius: 50%;
+    border:10px solid #666;
+}
+.service_list{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 .service{
     background-color: #062636;
     display: flex;
     justify-content: center;
-    margin:1% 20%;
+    width: 900px;
     padding: 0;
+    margin: 10px;
+    flex-shrink: 0;
 }
 .service_text_content{
     width: 50%;
+}
+.contact{
+    display: flex;
+    justify-content:center;
 }
 .main_footer{
     background-color: #011627;
@@ -71,6 +101,7 @@ figure{
 footer ul{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 footer a{
     color: #008a77;
