@@ -14,15 +14,18 @@ ol, ul{
 figure{
     margin: 0;
 }
+.header_figure{
+    max-width: 100%;
+}
 .main_header{
     background-color: #011627;
     color: #008a77;
     display: flex;
-    justify-content: space-between;
-    height: 105px;
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
+    justify-content:space-around;
+    align-items: center;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    text-align: center;
 }
 .navigation{
     height: inherit;
@@ -36,6 +39,7 @@ figure{
 }
 .main_header ul li{
     height: inherit;
+    max-height: 100%;
 }
 .main_header a{
     color: #008a77;
@@ -45,11 +49,28 @@ figure{
     align-items: center;
     padding: 0 10px;
 }
-.hero h1{
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    max-width: 100%;
+    align-items: center;
+}
+.hero_text{
+    width: 1280px;
+    max-width: 100%;
+}
+.hero_title{
     text-align: center;
+    font-size: 50px;
+    max-width: 100%;
+    font-size-adjust: inherit;
 }
 .title_section{
     text-align: center;
+    font-size: 200%;
 }
 .members ul{
     display: flex;
@@ -72,31 +93,76 @@ figure{
 .service_list{
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     flex-direction: column;
+}
+.service_list a{
+    text-decoration: none;
+    color: white;
+    font-weight: none;
 }
 .service{
     background-color: #062636;
     display: flex;
     justify-content: center;
     width: 900px;
+    max-width: 100%;
     padding: 0;
     margin: 10px;
     flex-shrink: 0;
+    flex-wrap: wrap;
 }
 .service_text_content{
     width: 50%;
 }
+.service_title{
+    font-size: 30px;
+}
 .contact{
     display: flex;
     justify-content:center;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    align-items: center;
 }
+.form{
+    background-color: teal;
+    max-width: 90%;
+    margin: 10px;
+    padding: 10px;
+}
+input{
+    border: none;
+    background-color: brown;
+    width: 560px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    color: white;
+    font-size: 20px;
+    max-width: 100%;
+
+}
+textarea{
+    border: none;
+    background-color: brown;
+    margin: 8px 0;
+    width: 560px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 20px;
+    max-width: 100%;
+
+}
+
 .main_footer{
     background-color: #011627;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     color: white;
+    flex-wrap: wrap;
+
 }
 footer ul{
     display: flex;
