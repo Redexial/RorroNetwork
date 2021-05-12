@@ -6,6 +6,11 @@ body{
 main{
     padding: 10px;
 } 
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
 ol, ul{
     list-style: none;
     margin: 0;
@@ -68,6 +73,12 @@ figure{
     max-width: 100%;
     font-size-adjust: inherit;
 }
+.hero_image img{
+    max-width: 100%;
+}
+.description_text{
+    text-align: center;
+}
 .title_section{
     text-align: center;
     font-size: 200%;
@@ -91,6 +102,8 @@ figure{
     border:10px solid #666;
 }
 .service_list{
+    width: auto;
+    margin: 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -102,17 +115,24 @@ figure{
 }
 .service{
     background-color: #062636;
+    margin: 10px;
     display: flex;
     justify-content: center;
     width: 900px;
-    max-width: 100%;
-    padding: 0;
-    margin: 10px;
+    max-width: 90%;
+    padding: 20px;
     flex-shrink: 0;
     flex-wrap: wrap;
 }
 .service_text_content{
     width: 50%;
+}
+.service_image{
+    width: 50%;
+    text-align: center;
+}
+.service_image img{
+    max-width: 100%;
 }
 .service_title{
     font-size: 30px;
@@ -178,4 +198,63 @@ footer nav a{
     height: inherit;
     align-items: center;
     padding: 0 10px;
+}
+
+@media screen and (max-width: 1024px){
+    
+}
+
+@media screen and (max-width: 767px) {
+    .main_header{
+        display: block;
+        height: auto;
+    }
+    .main_header ul{
+        display: initial;
+    }
+    .main_header ul li{
+        height: 50px;
+    }
+    .main_header a{
+        justify-content: center;
+    }
+
+    .service{
+        display: block;
+    }
+    .service_image{
+        width: auto;
+    }
+    .service_text_content{
+        width: auto;
+        font-size: 17px;
+    }
+    .service_title{
+        font-size: 1.5em;
+    }
+    .service_date{
+        font-size: 1.2em;
+    }
+    .service_link{
+        font-size: 1.2em;
+    }
+    .service_description{
+        font-size: .8em;
+    }
+    .service_text_content, .service_title, .service_date, .service_link{
+        margin: .4em 0;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .hero_title{
+        font-size: 200%;
+    }
+    .service_text_content{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    
 }
