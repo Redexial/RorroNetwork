@@ -35,7 +35,7 @@ app.post("/contactUs", (req, res)=>{
     });
     let mailOptions = {
         from:"redexial@hotmail.com",
-        to:"juanchitogomez0208@gmail.com",
+        to:"danielleonxd@gmail.com",
         subject: req.body.asunto,
         text: `nombre: ${req.body.nombre}, Correo: ${req.body.correo}, mensaje: ${req.body.mensaje}`,
         html:`<h1>WHAT UP desde node y su pagina uwu</h1>
