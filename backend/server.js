@@ -2,9 +2,14 @@ const express = require("express");
 const path = require("path")
 const nodemailer = require("nodemailer")
 const  bodyparser = require("body-parser")
+const handlebars = require("handlebars")
+const {engine} = require("express-handlebars")
+const config =  require("./config")
+
 const app = express();
 
-app.set("view engine", "ejs");
+app.engine("handlebars", engine({layoutsDir:path.join(__dirname, "../views"),defaultLayout:"index.handlebars"}))
+app.set("view engine", "handlebars");
 const PORT = process.env.PORT || 5000;
 
 app.use("/assets", express.static(path.join(__dirname, "../assets")))
@@ -20,22 +25,22 @@ app.get("/", (req, res)=>{
 })
 
 app.post("/contactUs", (req, res)=>{
-    console.log(req.body);
+    console.log(config)
     let transporter = nodemailer.createTransport({
         host: "smtp-mail.outlook.com",
         port: 587,
         secure: false,
         auth:{
-            user:"redexial@hotmail.com",
-            pass:"Juan0208"
+            user:config.EMAIL,
+            pass:config.PASSWORD
         },
         tls: {
             rejectUnauthorized: false
         }
     });
     let mailOptions = {
-        from:"redexial@hotmail.com",
-        to:"danielleonxd@gmail.com",
+        from: config.EMAIL,
+        to:"juanchitogomez0208@gmail.com, daliellleonxd@gmail.com",
         subject: req.body.asunto,
         text: `nombre: ${req.body.nombre}, Correo: ${req.body.correo}, mensaje: ${req.body.mensaje}`,
         html:`<h1>WHAT UP desde node y su pagina uwu</h1>
@@ -53,7 +58,7 @@ app.post("/contactUs", (req, res)=>{
         else{
             console.log("message sent: ", info.messageId);
             res.status('200');
-            res.send("well done")
+            res.render("index",{msg: "Mensaje enviado"})
         }
     })
 })
